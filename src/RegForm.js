@@ -6,7 +6,7 @@ const RegForm = () => {
   return (
     <article className="loginBorder">
       <main className="pa4 black-80">
-        <div className="measure center">
+        <div className="center">
           <img
               src={Vector}
               className="logo"
@@ -21,6 +21,7 @@ const RegForm = () => {
                 className="first"
                 type="text"
                 name="First Name"
+                value= "Write your first name"
               />
               <label className="secondLabel" hmtlFor="name">
                Last Name
@@ -29,11 +30,12 @@ const RegForm = () => {
                 className="last"
                 type="text"
                 name="Last Name"
+                value= "Write your last name"
               />
             </div>
             <div className="work">
               <label className="db fw6 lh-copy f6" hmtlFor="email-address">
-                Email
+               Work Email
             </label>
               <input
                 className="workEmail"
@@ -41,6 +43,7 @@ const RegForm = () => {
                 name="email-address"
                 id="email-address"
               />
+
             </div>
             <div className="mv3">
               <label className="db fw6 lh-copy f6" hmtlFor="password">

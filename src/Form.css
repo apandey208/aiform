@@ -2,34 +2,79 @@ article {
     margin-top: 100px;
     position: absolute;
     right: 100px;
-    display: inline;
     border: #16004B 2px solid;
-    color: #828282;
+    color: #818080;
     background: #16004B;
-    padding: 20px;
-   
+    padding: 30px 10px ;
+    
+    
+}
+
+.formLabel {
+    display: flex;
+    flex-wrap: wrap;
+     margin-top: 150px;
     justify-content: space-between;
     
-    
 }
+
 
 .logo {
-    max-width: 100%;
+    width: 100px;
     height: auto;
+    float: left;
 
 }
 
 
-.formLabel{
-    margin: auto;
-}
-
-.last{
-    margin-right: 4px;
-    padding: 5px;
+.first {
+    background:#16004B;
+    color: white;
+    padding: 2px;
     margin: 8px 0;
     display: inline-block;
     border-radius: 2px;
-    color: #828282;
+    border: none;
+    box-shadow:0 0 5px #666 ;
+    height:25px;
+    line-height:25px;
+    width:200px;
+    text-indent:5px;
+}
+
+.last{
+    background: #16004B;
+    color: white;
+    padding: 2px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 2px;
+    border: none;
+    box-shadow:0 0 5px #666 ;
+    height:25px;
+    line-height:25px;
+    width:200px;
+    text-indent:5px;
     
+}
+
+.work {
+    display: inline;
+    justify-content: space-between;
+
+}
+
+.workEmail {
+    background: #16004B;
+    color: white;
+    padding: 2px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 2px;
+    border: none;
+    box-shadow:0 0 8px #666 ;
+    height:25px;
+    line-height:25px;
+    width:200px;
+    text-indent:5px;
 }

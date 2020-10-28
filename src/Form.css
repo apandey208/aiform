@@ -1,0 +1,35 @@
+article {
+    margin-top: 100px;
+    position: absolute;
+    right: 100px;
+    display: inline;
+    border: #16004B 2px solid;
+    color: #828282;
+    background: #16004B;
+    padding: 20px;
+   
+    justify-content: space-between;
+    
+    
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+.formLabel{
+    margin: auto;
+}
+
+.last{
+    margin-right: 4px;
+    padding: 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 2px;
+    color: #828282;
+    
+}

@@ -1,76 +1,131 @@
 import React from "react";
-import './Form.css';
-import Vector from './Vector.svg';
+import "./Form.css";
+import Vector from "./Vector.svg";
 
 const RegForm = () => {
   return (
+    <div className="full">
     <article className="loginBorder">
-      <main className="pa4 black-80">
-        <div className="center">
-          <img
-              src={Vector}
-              className="logo"
-              title="Photo of a kitty staring at you"
-              alt=""
+      <main className="black">
+        <div className="whole">
+        <img
+            src={Vector}
+            className="logo"
+            title="Photo of a kitty staring at you"
+            alt=""
+          />
+        <div className="imgSrc">
+        <p className="trial" >To Start Your Free Trial</p>
+          </div>
+         <div className="center">
+          <div className="formLabel">
+            <label className="firstLabel" hmtlFor="name">
+              First Name
+            </label>
+            <input
+              className="first"
+              type="text"
+              name="First Name"
+              value="Your first name"
             />
-            <div className="formLabel">
-              <label className="firstLabel" hmtlFor="name">
-               First Name
-            </label>
-              <input
-                className="first"
-                type="text"
-                name="First Name"
-                value= "Write your first name"
-              />
-              <label className="secondLabel" hmtlFor="name">
-               Last Name
+            <label className="secondLabel" hmtlFor="name">
+              Last Name
             </label>
             <input
-                className="last"
-                type="text"
-                name="Last Name"
-                value= "Write your last name"
-              />
-            </div>
-            <div className="work">
-              <label className="db fw6 lh-copy f6" hmtlFor="email-address">
-               Work Email
-            </label>
-              <input
-                className="workEmail"
-                type="email"
-                name="email-address"
-                id="email-address"
-              />
-
-            </div>
-            <div className="mv3">
-              <label className="db fw6 lh-copy f6" hmtlFor="password">
-                Password
-            </label>
-              <input
-                className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
-                type="password"
-                name="password"
-                id="password"
-              />
-            </div>
-            <div className="">
-            <input
-
-              className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
-              type="submit"
-              value="Register"
+              className="last"
+              type="text"
+              name="Last Name"
+              value="Your last name"
             />
           </div>
-                 
-        </div>
-      </main>
+          <div className="work">
+            <label className="eWork" hmtlFor="email-address">
+              Work Email
+            </label>
+            <input
+              className="workEmail"
+              type="email"
+              name="email-address"
+              id="email-address"
+              value = "Write your email"
+            />
+            <label className="sal" hmtlFor="Salutation">Salutation</label>
+              <select name="salutation" id="prefix" className="prefix">
+                <option className="option" value="Mr">Mr.</option>
+                <option className="option" value="MrS">MrS.</option>
+                </select>
+            </div>
+          <div className="company">
+            <label className="compName" hmtlFor="company">Company</label>
+            <input className="comInput" type="text" name="company" id="company" value="Enter Your Company Name"/>
+          </div>
+          <div className="employees">
+            <label className="compName" hmtlFor="company">No. Of Employees</label>
+            <select name="salutation" id="prefix" className="count">
+                <option className="employe" value="fifty">50+</option>
+                <option className="employe" value="hundred">100+</option>
+                <option className="employe" value="fiveHundred">500+</option>
+                <option className="employe" value="thousand">100+</option>
+                </select>          
+          </div>
+          <div className="birth">
+            <label className="eWork" hmtlFor="birthday">
+              Birthdate
+            </label>
+          <input className="workEmail" type="date" id="birthday" name="birthday" value="select" />
+            <label className="crm" hmtlFor="CRM Vendor">CRM Vendor</label>
+            <input
+              className="last"
+              type="text"
+              name="CRM Vendor"
+              value="CRM Vendor"
+            /> 
+                
+            </div>
+          </div>
+          <div className="personal">
+          <div className="formLabel">
+            <label className="birth" hmtlFor="name">
+              Phone Number
+            </label>
+            <input
+              className="first"
+              type="tel"
+              name="telephone"
+              value="91xxxxxxx"
+            />
+            <label className="country" hmtlFor="name">
+              Last Name
+            </label>
+            <input
+              className="last"
+              type="text"
+              name="country"
+              value="Select Your Country"
+            />
+          </div>
+          <div className="agree">
+           <input
+              type="checkbox"
+              name="agree"
+              required="required"
+              value = "I agree to terms and Conditions"
+              />
+               <label className="agreement">I agree the terms and Conditions</label>
+          </div>
+         <div className="button">
+         <input 
+         className="submit"
+         type="text"
+         name="country"
+          value="Start My Free Trial" />
+            </div>
+            </div>
+            </div>
+            </main>
     </article>
+    </div>
   );
-}
-
-
+};
 
 export default RegForm;
